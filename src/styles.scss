@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$color-neutral: #fff;
 
+body { background-color: $color-neutral; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .container{
     max-width:1250px;
     margin:auto;
     padding:1rem
 }
+
