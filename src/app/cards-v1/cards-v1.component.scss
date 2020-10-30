@@ -1,1 +1,13 @@
 *{font-family:arial;}
+
+.row{margin: 0 -.5rem}
+.col{padding: .5rem;}
+
+@media (min-width: 768px) { 
+    .row{
+        display:flex
+    }
+    .col{
+        flex:1;
+    }
+ }
