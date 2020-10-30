@@ -1,6 +1,7 @@
 <mat-card>
-    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-title *ngIf="title">{{title}}</mat-card-title>
     <mat-card-content>
-        <p>{{paragraph}}</p>
+        <p *ngIf="paragraph">{{paragraph}}</p>
     </mat-card-content>
+    <button *ngIf="button" mat-flat-button color="accent">{{button}}</button>
 </mat-card>
