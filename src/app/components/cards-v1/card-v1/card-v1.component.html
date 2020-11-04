@@ -3,5 +3,5 @@
     <mat-card-content>
         <p *ngIf="paragraph">{{paragraph}}</p>
     </mat-card-content>
-    <button *ngIf="button" mat-flat-button color="accent">{{button}}</button>
+    <button *ngIf="button" routerLink="{{button.link}}" mat-flat-button color="accent">{{button.text}}</button>
 </mat-card>

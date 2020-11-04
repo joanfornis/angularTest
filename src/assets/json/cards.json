@@ -1,0 +1,26 @@
+[
+   {
+      "title":"Inicio",
+      "paragraph":"paragraph1",
+      "button":{
+        "link":"/home",
+        "text":"Ir a Inicio"
+        }
+   },
+   {
+      "title":"Contacto",
+      "paragraph":"paragraph2",
+      "button":{
+        "link":"/contact",
+        "text":"Ir a Contacto"
+        }
+   },
+   {
+      "title":"Página error",
+      "paragraph":"paragraph3",
+      "button":{
+          "link":"/**",
+          "text":"Ir a Error 404"
+        }
+   }
+]

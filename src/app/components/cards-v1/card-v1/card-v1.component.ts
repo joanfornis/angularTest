@@ -9,7 +9,7 @@ export class CardV1Component implements OnInit {
 
   @Input() title: string;
   @Input() paragraph: string;
-  @Input() button: string;
+  @Input() button: any;
 
   constructor() { }
 

@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { CardsV1Component } from './cards-v1/cards-v1.component';
-import { CardV1Component } from './cards-v1/card-v1/card-v1.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { CardsV1Component } from './components/cards-v1/cards-v1.component';
+import { CardV1Component } from './components/cards-v1/card-v1/card-v1.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatIconModule } from '@angular/material/icon';
@@ -14,12 +15,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 
 const router: Routes = [
-  { path: '', component: HeaderComponent },
-  { path: 'test', component: CardsV1Component },
-  { path: '**', component: FooterComponent },
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '**', component: Error404Component },
 ];
 
 @NgModule({
@@ -28,7 +33,10 @@ const router: Routes = [
     HeaderComponent,
     FooterComponent,
     CardsV1Component,
-    CardV1Component
+    CardV1Component,
+    HomeComponent,
+    ContactComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
@@ -38,7 +46,8 @@ const router: Routes = [
     MatToolbarModule,
     MatSliderModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
