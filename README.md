@@ -1,2 +1,2 @@
 # angularTest
-Angular Workbench
+Repositorio para reaprovechar estilos, componentes...
