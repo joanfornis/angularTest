@@ -7,6 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  searchText;
+  cards = [
+    {
+      "title":"1",
+      "paragraph":"primero"
+   },
+   {
+      "title":"2",
+      "paragraph":"segundo"
+   },
+   {
+      "title":"3",
+      "paragraph":"tercero"
+   }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

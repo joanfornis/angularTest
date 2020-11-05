@@ -1,8 +1,9 @@
-<h1>{{title}}</h1>
-
-<div class="row">
-    <div class="col" *ngFor="let content of contents">
-        <app-card-v1 [title]="content.title" [paragraph]="content.paragraph" [button]="content.button"></app-card-v1>
+<div class="cards-v1">
+    <h1>{{title}}</h1>
+    <div class="row">
+        <div class="col" *ngFor="let content of contents">
+            <app-card-v1 [title]="content.title" [paragraph]="content.paragraph" [button]="content.button"></app-card-v1>
+        </div>
     </div>
 </div>
 
