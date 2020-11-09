@@ -17,6 +17,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { Error404Component } from './pages/error404/error404.component';
@@ -52,6 +54,7 @@ const router: Routes = [
     MatCardModule,
     MatButtonModule,
     MatInputModule,
+    MatSidenavModule,
     HttpClientModule,
     FormsModule,
     Ng2SearchPipeModule

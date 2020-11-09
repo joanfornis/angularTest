@@ -1,7 +1,14 @@
 <div class="cards-v1">
     <h1>{{title}}</h1>
+    <mat-form-field class="example-form-field">
+        <mat-label>Escribe para filtrar</mat-label>
+        <input matInput type="text" type="text" name="search" [(ngModel)]="searchCard" autocomplete="off">
+        <button mat-button *ngIf="searchCard" matSuffix mat-icon-button aria-label="Clear" (click)="searchCard=''">
+          <mat-icon>close</mat-icon>
+        </button>
+    </mat-form-field>
     <div class="row">
-        <div class="col" *ngFor="let content of contents">
+        <div class="col" *ngFor="let content of contents | filter:searchCard">
             <app-card-v1 [title]="content.title" [paragraph]="content.paragraph" [button]="content.button"></app-card-v1>
         </div>
     </div>

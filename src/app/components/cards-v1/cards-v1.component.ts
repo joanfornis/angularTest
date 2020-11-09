@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardsV1Component implements OnInit {
 
+  searchCard;
   @Input() title: string;
   @Input() contents: any;
 
