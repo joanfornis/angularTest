@@ -18,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -55,6 +56,7 @@ const router: Routes = [
     MatButtonModule,
     MatInputModule,
     MatSidenavModule,
+    MatListModule,
     HttpClientModule,
     FormsModule,
     Ng2SearchPipeModule
